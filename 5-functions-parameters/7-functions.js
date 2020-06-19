@@ -7,6 +7,10 @@
 //  convierteEurosEnPesetas(1) === 168 // true
 
 // Aquí tu código
+let convierteEurosEnPesetas = (euros) => {
+
+    return euros*168;
+}
 
 
 // Hasta aquí

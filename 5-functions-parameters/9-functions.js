@@ -10,6 +10,15 @@
 
 // Aquí tu código
 
+let muestraPorConsolaEurosEnPesetas = (euros) => {
+
+    if (typeof euros != "number"){
+        throw new Error('convierteEurosEnPesetas debe recibir un number');
+    }
+
+    console.log(euros*168);
+}
+
 
 // Hasta aquí
 
