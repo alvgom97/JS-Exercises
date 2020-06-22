@@ -3,6 +3,9 @@
 
 function stringItUp(numbers){
     // your code here
+    return numbers.map(n => {
+        return n.toString();
+    });
 }
 
 

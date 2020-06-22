@@ -5,6 +5,27 @@
 
 let esPalindromo= (palabra) => {
     // Aquí tu código.  Desde aquí:
+    if(typeof palabra === 'string' && palabra.length > 0){
+        let end = false;
+        let palim = true;
+        let i = 0; let j = palabra.length-1;
+        while (!end){
+            if (i >= j){
+                end = true;
+            }
+            else if(palabra.charAt(i) !== palabra.charAt(j)){
+                palim = false;
+                end = true;
+            }
+            i++;
+            j--;
+        }
+
+        return palim;
+    } 
+    else {
+        return 'no es un formato correcto';
+    }
     //Hasta aqui.
 }
 

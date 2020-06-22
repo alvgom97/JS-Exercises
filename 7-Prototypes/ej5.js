@@ -19,6 +19,9 @@
 
 function songsOfArtist(songs, artistName){
     //Your code goes here
+    return songs.filter(s => {
+        return s.artist === artistName ? true : false;
+    }).map(s => { return s.song});
 }
 
 let test = require('../test.js');

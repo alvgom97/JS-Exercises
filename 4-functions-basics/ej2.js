@@ -8,7 +8,7 @@
 let convierteString = (numero) => {
     // Aquí tu código.  Desde aquí:
 
-    
+    return typeof numero == "number" ? numero.toString() : 'Debo ser ejecutada con un numero';
     // Hasta aquí.
 }
 
