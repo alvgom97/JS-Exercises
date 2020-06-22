@@ -6,6 +6,9 @@
 
 function makeStringsWhoCanAccess(persons){
     // your code here
+    return persons.filter(p => {
+        return p.age >= 18 ? true : false;
+    }).map(n => {return n.name });
 }
 
 let test = require('../test.js');

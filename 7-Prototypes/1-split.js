@@ -6,6 +6,14 @@
 
 let getCiudadesOrdenadas= (ciudades) => {
     // Aquí tu código.  Desde aquí:
+    if (typeof ciudades === 'string' && ciudades.length > 0){
+        let arr = ciudades.split(', ');
+        arr = arr.sort();
+        return arr;
+    }
+    else {
+        return "no es un formato correcto";
+    }
     // Hasta aquí.
 }
 
